@@ -9,9 +9,11 @@ function App() {
   // These above values will be provided by ThemeProvider but if not defined ThemeProvider will give its default values.
   const [themeMode,setThemeMode] = useState("light");
   const lightTheme = ()=>{
+    document.querySelector('body').style.backgroundColor = 'white';
     setThemeMode('light')
   }
   const darkTheme = ()=>{
+    document.querySelector('body').style.backgroundColor = 'black';
     setThemeMode('dark')
   }
   
